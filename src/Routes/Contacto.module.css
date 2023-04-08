@@ -1,0 +1,12 @@
+
+
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: stretch;
+ 
+    background-color: rgba(44, 181, 255, 0.073);
+}

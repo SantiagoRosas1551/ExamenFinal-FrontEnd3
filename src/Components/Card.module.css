@@ -21,3 +21,8 @@
 .title{
   height: 2rem;
 }
+
+.heartButton{
+  background-color: blueviolet;
+  width: 40px;
+}

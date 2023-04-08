@@ -1,12 +1,18 @@
 import styles from "./Footer.module.css";
+import { useContext } from "react";
+import { ThemeContext} from "../Contexts/themeContext";
+
+
 
 const Footer = () => {
+
+  const {state, toggleTheme} =useContext(ThemeContext)
   const scrollToTop = () => {
     window.scrollTo(0, 0)
   }
   return (
     <footer>
-      <div className={styles.footerWrapper}>
+      <div className={`styles.footerWrapper` }>
         <button className={`btn btn-danger ${styles.top}`} onClick={scrollToTop}>Voltar para o topo</button>
         {/* //Na linha seguinte deverá ser feito um teste se a aplicação
         // está em dark mode e deverá utilizar a class navbar-dark bg-dark ou navbar-light bg-light  */}

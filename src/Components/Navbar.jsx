@@ -1,7 +1,14 @@
+
 import styles from "./Navbar.module.css";
+import { Link } from "react-router-dom";
+import { ThemeContext } from '../Contexts/themeContext'
+import { useContext } from 'react';
+
 
 const Navbar = () => {
-
+  const {state, toggleTheme} =useContext(ThemeContext)
+  
+  // const [theme, changeTheme ] = useContext(ThemeContext)
   return (
     <header className="sticky-top">
       {/* //Na linha seguinte deverá ser feito um teste se a aplicação
@@ -49,13 +56,18 @@ const Navbar = () => {
                   Login
                 </a>
               </li>
+              <li className={`nav-item ${styles.navBarLink}`}>
+                <Link className={`nav-link`} to={"/contacto"}>
+                  Contacto
+                </Link>
+                </li>
               <li className={`nav-item`}>
                 {/* Ao ser clicado, esse botão mudará a aplicação para dark mode ou light mode.
                  Lembre-se de usar um estado no contexto para fazer essa alteração.
                  Na linha seguinte deverá ser feito um teste se a aplicação
                  está em dark mode e deverá utilizar o icone ☀ ou 🌙 e btn-dark ou btn-light*/}
-                <button
-                  className={`btn btn-light${styles.btnStyle
+                <button onClick={toggleTheme}
+                  className={`btn btn-${state.theme}${styles.btnStyle
                     }`}
                 >
                   ☀ 🌙{" "}
