@@ -7,7 +7,7 @@
   padding: 1rem;
   background: #f21d1d;
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-top: 2rem;
   width: 100%;
 }
@@ -36,3 +36,4 @@
   max-width: 2rem;
   height: auto;
 }
+

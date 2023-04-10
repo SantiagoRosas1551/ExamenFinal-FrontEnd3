@@ -19,6 +19,7 @@ code {
 }
 
 main{
+  max-height: fit-content;
   min-height: calc(100vh - 292px);
 }
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import FormCSS from '../Components/Form.module.css'
 
 function Form() {
   const [name, setName] = useState('');
@@ -43,28 +44,28 @@ function Form() {
   
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Name:</label>
-      <input
+    <form className={FormCSS.form} onSubmit={handleSubmit} > <h1>¿Desea solicitar nuestros servicios?</h1>
+      <label  htmlFor="name">Name:</label>
+      <input className={FormCSS.input}
         type="text"
         id="name"
         value={name}
         onChange={handleNameChange}
-        className={errors.name ? 'error' : ''}
+        // className={errors.name ? 'error' : ''}
       />
       {errors.name && <span className="error-message">{errors.name}</span>}
 
-      <label htmlFor="email">Email:</label>
-      <input
+      <label   htmlFor="email">Email:</label>
+      <input className={FormCSS.input}
         type="email"
         id="email"
         value={email}
         onChange={handleEmailChange}
-        className={errors.email ? 'error' : ''}
+        // className={errors.email ? 'error' : ''}
       />
       {errors.email && <span className="error-message">{errors.email}</span>}
 
-      <button type="submit">Submit</button>
+      <button className={FormCSS.btn} type="submit">Submit</button>
       <div className="success-message">{successMessage}</div>
 
     </form>

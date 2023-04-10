@@ -1,9 +1,11 @@
 import React from 'react'
 import Form from '../Components/Form'
-import style from '../Routes/Contacto.module.css'
+import contactoCss from '../Routes/Contacto.module.css'
+
+
 const Contacto = () => {
   return (
-    <div className={style.formulario}>
+    <div className={contactoCss.form}>
       <Form></Form>
     </div>
   )

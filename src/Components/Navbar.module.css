@@ -1,9 +1,15 @@
 .navbarBrand {
   font-size: 30px;
+  color: #272727;
+  margin: none;
+  padding: none;
+  background:none
+ 
 }
 
 .navbarBrand::first-letter {
-  color: #f21d1d;
+  color: #ff0000;
+  background: none;
 }
 
 .navBarLink {
@@ -13,6 +19,8 @@
   font-weight: bold;
   transition: all 0.3s ease-in-out;
   font-weight: 700;
+
+ 
 }
 
 .btnStyle{

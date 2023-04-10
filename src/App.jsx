@@ -3,17 +3,17 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 
 import { DentistContextProvider } from "./Contexts/dentistContext";
-import { ThemeProvider } from "./Contexts/themeContext";
-
+import { ThemeContext, ThemeProvider } from "./Contexts/themeContext";
+import { useContext } from "react";
 function App() {
-
- 
+  
+  const {state, toggleTheme} =useContext(ThemeContext)
+  
   return (
     <>
   
-    <ThemeProvider> 
-        <DentistContextProvider>
-      <div className={`app light}`}>
+    
+      <div className={`app ${state.theme}`}>
 
         <Navbar />
         <main >
@@ -21,8 +21,7 @@ function App() {
         </main>
         <Footer />
       </div>
-        </DentistContextProvider>
-    </ThemeProvider>
+       
     
     </>
   );

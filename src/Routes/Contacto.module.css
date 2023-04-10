@@ -1,12 +1,14 @@
 
-
-
-
-.formulario{
+.form{
     display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    height:80vh;
+   
     flex-direction: column;
-    justify-content: center ;
-    align-items: stretch;
- 
-    background-color: rgba(44, 181, 255, 0.073);
+    justify-content:center;
+    align-items: center;
+}
+   
+.formDark{
+    background-color: rgb(255, 213, 0);
 }

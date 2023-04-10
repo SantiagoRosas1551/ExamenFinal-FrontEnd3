@@ -1,15 +1,41 @@
-.card{
-  width: 23rem;
-  gap: 1rem;
-  padding: 1rem;
-  margin-top: 2rem;
-  height: calc(100vh -86px);
+.form{
+    color: #ffffff;
+    display: flex ;
+    width: 80px;
+    flex-direction: column;
+    justify-content:space-around;
+    width:50%;
+    height:60vh;
+	padding:16px;
+	background-color:#ee1010;
+    font-size: large;
+    font-family:sans-serif;
+    font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+  box-shadow:5px 8px 8px #343a3c;
+  text-shadow:5px 8px 8px #343a3c; ;
+  background: radial-gradient(at 20px 20px, rgb(103, 0, 0), rgb(255, 0, 0));
 }
 
-.cardDark{
-  background-color: #31313196;
+form
+
+.input{
+    height: 80px;
+    border-radius: 90px;
+    padding: 8px;
+    margin:20px;
+    
+    
 }
 
-.inputSpacing+.inputSpacing{
-  margin: 1rem 0;
+input#email{
+    height: 50px;
 }
+.btn{
+border: none;
+padding: 10px 8px;
+    margin: 10px;
+   
+}
+

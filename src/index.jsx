@@ -9,6 +9,8 @@ import App from "./App"
 import Contacto from "./Routes/Contacto"
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
 import "./index.css";
+import { DentistContextProvider } from "./Contexts/dentistContext";
+import { ThemeProvider } from "./Contexts/themeContext";
 
 
 const router = createBrowserRouter([
@@ -43,7 +45,13 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //Lembre-se de configurar suas rotas e seu contexto aqui
 root.render(
+  <ThemeProvider> 
+        <DentistContextProvider>
+          
+
   <React.StrictMode>
     <RouterProvider router={router}/>
   </React.StrictMode>
+        </DentistContextProvider>
+        </ThemeProvider>
 );
