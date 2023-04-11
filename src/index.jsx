@@ -11,6 +11,7 @@ import { createBrowserRouter,RouterProvider } from "react-router-dom";
 import "./index.css";
 import { DentistContextProvider } from "./Contexts/dentistContext";
 import { ThemeProvider } from "./Contexts/themeContext";
+import ErrorPage from "./Pages/ErrorPage";
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
   {
     path:"/",
     element:<App/>,
+    errorElement:<ErrorPage/>,
     children:[{
       
         path:"/home",

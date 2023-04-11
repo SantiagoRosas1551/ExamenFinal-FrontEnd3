@@ -18,8 +18,8 @@ const Navbar = () => {
         aria-label="Third navbar example"
       >
         <div className={`container ${state.theme} `}>
-          {/* Ao clicar, o usuário deve ser redirecionado a home, com react-router */}
-          <a className={`navbar-brand  ${styles.navbarBrand} ${state.theme}`  } href="/home">
+          {/* Ao clicar, o usuário deve er redirecionado a home, com react-router */}
+          <a className={styles.header}   href="/home">
             DH Odonto
           </a>
           <button

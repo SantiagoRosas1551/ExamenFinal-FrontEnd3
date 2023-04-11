@@ -15,6 +15,8 @@ function App() {
     
       <div className={`app ${state.theme}`}>
 
+        
+        
         <Navbar />
         <main >
           <Outlet />

@@ -20,7 +20,7 @@ const Home = () => {
       <h1>Home</h1>
       <div className={`card-grid container `}>
       {data.length 
-       ? data.map(dentist => (<Card key={dentist.id} data={dentist}  name={dentist.name}/>))
+       ? data.map(dentist => (<Card key={dentist.id} data={dentist} id={dentist.id} name={dentist.name}/>))
        : null
     }
       </div>
